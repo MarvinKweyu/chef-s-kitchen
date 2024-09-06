@@ -1,13 +1,8 @@
 import React from 'react'
 import Link from 'next/link';
-import Image from 'next/image';
 import {
     Card,
     CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
 } from "@/components/ui/card"
 
 
@@ -15,6 +10,7 @@ function RecipeList({ recipe = [] }) {
     // console.log(recipe);
     return (
         <>
+            <div className='p-4 mx-auto'>
             <h2 className='text-4xl font-bold text-gray-800 mb-12'>Recipes</h2>
             <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8'>
             {
@@ -49,6 +45,7 @@ function RecipeList({ recipe = [] }) {
 
                 ))
                 }
+                </div>
                 </div>
         </>
     )

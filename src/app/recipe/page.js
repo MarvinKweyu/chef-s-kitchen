@@ -1,5 +1,5 @@
 import React from 'react'
-import RecipeList from '@/components/ui/recipe-list'
+import RecipeList from '@/components/recipe-list'
 // fetch from the server but render data in components
 
 const listOfRecipe = async () => {

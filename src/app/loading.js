@@ -2,8 +2,11 @@ import React from 'react'
 import { Skeleton } from "@/components/ui/skeleton"
 
 function Loading() {
-    return (
-      <Skeleton className="w-[100px] h-[20px] rounded-full" />
+  return (
+      <div className='w-full bg-black min-h-screen'>
+      
+      <Skeleton />
+      </div>
 
     )
 }
