@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+import Loading from "./loading";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -23,7 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Suspense fallback={<Loading/>}>{children}</Suspense>
       </body>
     </html>
   );
